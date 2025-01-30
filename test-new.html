@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+     
+      .container {
+        width: 80%;
+        max-width: 800px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+
+      .faq-section {
+        margin-bottom: 30px;
+      }
+
+      .faq-item {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+      }
+
+      .faq-question {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-weight: bold;
+        color: #555;
+      }
+
+      .faq-question::before {
+        content: '+';
+        margin-right: 10px;
+        font-size: 1.2em;
+        color: #aaa;
+      }
+
+      .faq-question.active::before {
+        content: '-';
+        color: #555;
+      }
+
+      .faq-answer {
+        padding-left: 25px;
+        color: #777;
+        display: none;
+      }
+
+      .faq-answer.active {
+        display: block;
+      }
+
+      .faq-item input[type="checkbox"] {
+        display: none;
+      }
+
+      .faq-item input[type="checkbox"]:checked + .faq-question::before {
+        content: '-';
+        color: #555;
+      }
+
+      .faq-item input[type="checkbox"]:checked ~ .faq-answer {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Do you have any quesiton</h2>
+        <p>Our support team ready to help you, please contact with them</p>
+        <div class="faq-section">
+            <div class="faq-item">
+                <input type="checkbox" id="faq1">
+                <label for="faq1" class="faq-question">How to contact with riders emergency?</label>
+                <div class="faq-answer">Our support team is ready to help you, please contact with them.</div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq2">
+                <label for="faq2" class="faq-question">App installation failed, how to update system information?</label>
+                <div class="faq-answer">Please check your internet connection and try again. If the problem persists, contact support.</div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq3">
+                <label for="faq3" class="faq-question">Website reponse taking time, how to improve?</label>
+                <div class="faq-answer">Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.</div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq4">
+                <label for="faq4" class="faq-question">New update fixed all bug and issues</label>
+                <div class="faq-answer">The latest update includes fixes for all known bugs and issues.</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

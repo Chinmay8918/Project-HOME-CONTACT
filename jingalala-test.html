@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Image</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        .footer-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .footer-subscribe h2 {
+            margin-bottom: 10px;
+        }
+
+        .footer-subscribe p {
+            margin-bottom: 20px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-form input {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            color: #0e0d0d;
+        }
+
+        .subscribe-btn {
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: rgb(23, 22, 22);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .promo-message {
+            font-size: 0.9em;
+            color: #101010;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-logo p {
+            font-size: 0.8em;
+            color: #0c0c0c;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        .footer-column {
+            min-width: 150px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column a {
+            color: rgb(16, 16, 16);
+            text-decoration: none;
+        }
+        .footer-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        footer {
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <img src="footer-image2.jpg" alt="Footer Background" class="footer-image">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-subscribe">
+                    <h2>Like our service? Subscribe us</h2>
+                    <p>We have more than thousand of creative entrepreneurs and start joining our business</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter email address">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                    <p class="promo-message">Don't provide any promotional message.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    StartupLanding
+                    <p>Terms of use | Privacy</p>
+                    <p>Copyright by 2020 YourName, Inc</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Customer Support</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Our Information</h4>
+                        <ul >
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>My Account</h4>
+                        <ul>
+                            <li><a href="#">Press Inquiries</a></li>
+                            <li><a href="#">Social media</a></li>
+                            <li><a href="#">directories</a></li>
+                            <li><a href="#">Images & B-roll</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Github</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
