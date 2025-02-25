@@ -116,7 +116,7 @@ body {
   }
 
   .get-started {
-    background: red;
+    /* background: rgb(33, 32, 32); */
     color: #fff;
     padding: 10px 15px;
     border-radius: 4px;
